@@ -1,4 +1,4 @@
-package edu.desu.datastructs;
+package edu.desu.datastructs.calculator;
 
 public class ScientificCalculator {
 
