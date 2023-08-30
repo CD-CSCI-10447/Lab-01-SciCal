@@ -39,9 +39,49 @@ Follow the steps below to update the `info.txt` file with your personal details:
 5. **Verify Your Changes**:
    - It's always a good practice to double-check your changes. Re-open the `info.txt` file and review the information you entered to ensure accuracy.
 
-6. **Submission (if required)**:
-   - If you need to submit the updated `info.txt` file for a class assignment or project, follow the guidelines provided by your instructor or team leader.
+6. **Submission (push to git)**:
+   Certainly! Here are step-by-step instructions to help a student add their changes to Git, write a commit message, and push to the main branch:
 
+### 1. Navigate to Your Repository:
+Using the terminal or command prompt, navigate to the directory where your Git repository is located.
+
+```bash
+cd path/to/your/repository
+```
+
+### 2. Check the Current Status:
+Before adding changes, it's a good practice to check which files have been modified or are untracked.
+
+```bash
+git status
+```
+
+### 3. Add Changes:
+
+- To add all the changes in the repository:
+```bash
+git add .
+```
+
+### 4. Commit Your Changes:
+
+Once you've added the desired changes, you can commit them with a meaningful commit message.
+
+```bash
+git commit -m "Your meaningful commit message here"
+```
+
+Replace `"Your meaningful commit message here"` with a short and descriptive message about the changes you've made.
+
+### 5. Push to the Main Branch:
+
+- Finally, push your committed changes to the remote main branch:
+```bash
+git push origin main
+```
+
+
+Remember, Git is a powerful tool, and there are many additional features and commands to explore as you become more familiar with it. These instructions are just a starting point!
 7. **Important Reminders**:
    - Do not add or delete any lines in the file.
    - Ensure that the structure of the file remains intact.
