@@ -5,11 +5,50 @@ Just a quick note to let you know that there is a Bash and Git Cheat Sheet avail
 * [Bash Command CheatSheet](./Part1-BashCommands.md)
 * [Git CheatSheet](./Part2-GitCheatSheet.md)
 
+## Your info
+**Updating the `info.txt` File with Your Personal Information**
+
+Follow the steps below to update the `info.txt` file with your personal details:
+
+1. **Locate the File**:
+   - Find the `info.txt` file in the designated folder or directory on your computer or shared platform.
+
+2. **Open the File**:
+3. **Edit the File**:
+   - The file contains three lines, each dedicated to specific personal information. Ensure to only replace the placeholders with your details without altering the structure of the file.
+   - Below are the lines and the instructions on how to edit each:
+
+     a. **Full Name**:
+     - Locate the line `your-full-name= Tariq Hook`.
+     - Replace `Tariq Hook` with your own full name, ensuring that you don't add any extra spaces.
+     Example: `your-full-name= John Doe`
+
+     b. **GitHub Name**:
+     - Locate the line `your-github-name = code-rhino`.
+     - Replace `code-rhino` with your own GitHub username.
+     Example: `your-github-name = mygithubuser123`
+
+     c. **Email Address**:
+     - Locate the line `your-email = thook@desu.edu`.
+     - Replace `thook@desu.edu` with your own email address.
+     Example: `your-email = johndoe@email.com`
+
+4. **Save the File**:
+   - After updating your information, click on "File" in the top menu and then select "Save" to save the changes to the `info.txt` file.
+
+5. **Verify Your Changes**:
+   - It's always a good practice to double-check your changes. Re-open the `info.txt` file and review the information you entered to ensure accuracy.
+
+6. **Submission (if required)**:
+   - If you need to submit the updated `info.txt` file for a class assignment or project, follow the guidelines provided by your instructor or team leader.
+
+7. **Important Reminders**:
+   - Do not add or delete any lines in the file.
+   - Ensure that the structure of the file remains intact.
+   - Do not use any special characters or formatting.
+
+Once you've completed these steps, you've successfully updated the `info.txt` file with your personal information.
 # Unit Testing
-
-Certainly! The conveyor belt analogy is a great way to explain unit testing to high school students.
-
----
 
 Imagine a factory where toys are assembled on a conveyor belt. At various stages along the belt, different parts are added to the toy, and by the end of the line, the toy should be fully assembled and working.
 
