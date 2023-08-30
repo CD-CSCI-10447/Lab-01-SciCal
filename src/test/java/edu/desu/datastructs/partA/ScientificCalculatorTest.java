@@ -1,4 +1,4 @@
-package edu.desu.datastructs.calculator;
+package edu.desu.datastructs.partA;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
