@@ -5,6 +5,78 @@ Just a quick note to let you know that there is a Bash and Git Cheat Sheet avail
 * [Bash Command CheatSheet](./Part1-BashCommands.md)
 * [Git CheatSheet](./Part2-GitCheatSheet.md)
 
+# Unit Testing
+
+Certainly! The conveyor belt analogy is a great way to explain unit testing to high school students.
+
+---
+
+Imagine a factory where toys are assembled on a conveyor belt. At various stages along the belt, different parts are added to the toy, and by the end of the line, the toy should be fully assembled and working.
+
+**Conveyor Belt Process:**
+
+1. **Base Assembly**: The basic structure of the toy is placed on the conveyor belt.
+2. **Attachment of Arms and Legs**: Robotic arms attach arms and legs to the toy.
+3. **Painting**: The toy is painted with the right colors and designs.
+4. **Quality Check**: Before packaging, the toy is checked to ensure it works properly (e.g., if it's a wind-up toy, does it walk?).
+
+Now, let's relate this to unit testing:
+
+1. **Base Assembly Test**: This would check if the base structure is correct. Does it have the required slots for arms and legs? Is it made of the right material? If this "unit test" fails, there's no point in moving on.
+
+2. **Attachment Test**: Once arms and legs are attached, a test checks if they are secure. Are they in the right position? Can they move if they are supposed to?
+
+3. **Painting Test**: After painting, a test checks if the right colors were used. Are the designs correct? Is the paint evenly spread without smudges?
+
+4. **Quality Check Test**: This is a final unit test. If it's a wind-up toy, winding it up and seeing if it walks is a test. It checks the main functionality of the toy.
+
+In software, **unit tests** are similar. Before moving to the next stage (or before adding more code), developers ensure that each small piece (or "unit") of the software is working as expected. Just like you wouldn't want to package and sell a toy that hasn't been checked for quality, developers don't want to release software without making sure each part works correctly on its own.
+
+By testing each "unit" (like each stage of the toy assembly), problems can be identified and fixed early, ensuring the final product is of high quality.
+
+### Running Test
+
+### 2. Writing a JUnit 5 Test
+
+1. Right-click on the `src/test/java` directory in your project.
+2. Select `New > Java Class` and provide a name, e.g., `MyFirstJUnit5Test`.
+3. In the newly created class, write a simple test:
+
+```java
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class MyFirstJUnit5Test {
+
+    @Test
+    void simpleTest() {
+        int expected = 2;
+        int actual = 1 + 1;
+        assertEquals(expected, actual, "1 + 1 should equal 2");
+    }
+}
+```
+
+### 3. Running the Test from IntelliJ IDEA
+
+1. **From the Editor**: If you've opened your test class, you will see green play icons next to the class name and next to each test method. Clicking these icons will give you options to run or debug the test or the whole test class.
+
+2. **From the Project Sidebar**: You can navigate to your test class in the `src/test/java` directory in the project sidebar. Right-click on the test class and choose `Run 'MyFirstJUnit5Test'`.
+
+3. **From the Test Runner Tool Window**: After running tests once, they'll appear in the test runner tool window. You can re-run tests from this window by clicking the play button or right-clicking and selecting the appropriate option.
+
+### 4. Viewing Test Results
+
+Once your tests run, IntelliJ IDEA will display the results in the test runner tool window. Successful tests will be marked with a green checkmark, while failing tests will have a red "x". You can click on individual tests to see more details, stack traces, and even quickly navigate to the test source code.
+
+### Tips:
+
+- Use the `@BeforeEach` and `@AfterEach` annotations for methods to run before/after each test.
+- Use the `@BeforeAll` and `@AfterAll` annotations for methods to run once before/after all tests in the class.
+
+Remember to always ensure your project dependencies are updated and correctly configured. If IntelliJ IDEA ever seems to have trouble recognizing your tests, ensure that your `src/test/java` directory is correctly marked as a Test Sources Root (right-click the directory > `Mark Directory as` > `Test Sources Root`).
+
+
 # Part A - Scientific Calculator Lab
 
 ## Introduction
